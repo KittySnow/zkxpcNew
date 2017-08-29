@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>智慧班级 - 首页</title>
+    <meta name="keywords" content="智慧班级、成长档案、成长手册、班级主页、班级相册、学校网站、家校互动、微信班级"/>
+    <meta name="description" content="智慧班级是为中小学校量身定做的系统，涉及到中小学，学校全方面的管理，界面清新美观，操作方便。智慧班级帮助校长更好管理学校，帮助老师更好的进行教学，帮助家长了解孩子在学校的日常学习及生活。"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script type="text/javascript" src="http://assets.haoyuyuan.com/vendor/libs/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
+            var bodyH = document.body.clientHeight , screenH = window.screen.availHeight;
+            //根据路径后缀，激活主菜单的active选中的选项
+            if(!!pathname){
+                $.each(list,function(index,val){
+                    $(this).hasClass(pathname)&&$(this).addClass("active");
+                });
+                bodyH<screenH && $('.foot .caret,.foot .top').hide();
+            }
+        });
+    </script>
+
+</head>
+<body >
+<div class="head">
+    <div class="head-wrap">
+        <div class="logo">
+            <a ></a>
+        </div>
+        <ul class="menu">
+            <li class="server"><a href="/support/server"><i  class="icon-font2"></i>下载客户端</a></li>
+            <li class="aboutus"><a href="/support/aboutus">入驻</a></li>
+            <li class="weixin"><a href="/support/weixin">宅改造</a></li>
+            <li class="growbook"><a href="/support/growbook">宅换新</a></li>
+            <li class="product"><a href="/support/product">宅快修 <i class="icon-hot"></i></a></li>
+            <li class="login"><a href="/auth/login">首页</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="body zgz">
+    <div class="banner"></div>
+
+    <div class="wrap">
+        <ul class="package-list">
+            <li class="box1">
+                <div class="transparent-right">
+                    <h1 class="package-title">厨房改造</h1>
+                    <div class="package-price">套餐15000元/ 4㎡</div>
+                    <div class="package-advance">包主材、包辅材、包施工</div>
+                </div>
+            </li>
+            <li class="box2">
+                <div class="transparent-left">
+                    <h1 class="package-title">阳台改造</h1>
+                    <div class="package-price">套餐15000元/ 4㎡</div>
+                    <div class="package-advance">包主材、包辅材、包施工</div>
+                </div>
+            </li>
+            <li class="box3">
+                <div class="transparent-right">
+                    <h1 class="package-title">卫生间改造</h1>
+                    <div class="package-price">套餐15000元/ 4㎡</div>
+                    <div class="package-advance">包主材、包辅材、包施工</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>智慧班级 - 首页</title>
+    <meta name="keywords" content="智慧班级、成长档案、成长手册、班级主页、班级相册、学校网站、家校互动、微信班级"/>
+    <meta name="description" content="智慧班级是为中小学校量身定做的系统，涉及到中小学，学校全方面的管理，界面清新美观，操作方便。智慧班级帮助校长更好管理学校，帮助老师更好的进行教学，帮助家长了解孩子在学校的日常学习及生活。"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script type="text/javascript" src="http://assets.haoyuyuan.com/vendor/libs/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
+            var bodyH = document.body.clientHeight , screenH = window.screen.availHeight;
+            //根据路径后缀，激活主菜单的active选中的选项
+            if(!!pathname){
+                $.each(list,function(index,val){
+                    $(this).hasClass(pathname)&&$(this).addClass("active");
+                });
+                bodyH<screenH && $('.foot .caret,.foot .top').hide();
+            }
+        });
+    </script>
+
+</head>
+<body >
+<div class="head">
+    <div class="head-wrap">
+        <div class="logo">
+            <a ></a>
+        </div>
+        <ul class="menu">
+            <li class="server"><a href="/support/server"><i  class="icon-font2"></i>下载客户端</a></li>
+            <li class="aboutus"><a href="/support/aboutus">入驻</a></li>
+            <li class="weixin"><a href="/support/weixin">宅改造</a></li>
+            <li class="growbook"><a href="/support/growbook">宅换新</a></li>
+            <li class="product"><a href="/support/product">宅快修 <i class="icon-hot"></i></a></li>
+            <li class="login"><a href="/auth/login">首页</a></li>
+        </ul>
+    </div>
+</div>
+<div class="body zkx">
+    <div class="banner"></div>
+
+    <div class="zkx-show wrap">
+        <ul class="cl">
+            <li>
+                <div class="zkx-avatar zkx-avatar1"></div>
+                <div class="info">臭味</div>
+                <p class="gray-info">
+                    地漏、座便、面盆、<br>
+                    水槽、烟道返味
+                </p>
+            </li>
+            <li>
+                <div class="zkx-avatar zkx-avatar2"></div>
+                <div class="info">漏水</div>
+                <p class="gray-info">
+                    阀门、水路、 马桶、下水<br>
+                    管、 面盆、顶地墙面漏水
+                </p>
+            </li>
+            <li class="mr0">
+                <div class="zkx-avatar zkx-avatar3"></div>
+                <div class="info">堵塞</div>
+                <p class="gray-info">
+                    座便、 地漏、浴缸、 面<br>
+                    盆、 水槽、管路等堵塞
+                </p>
+            </li>
+            <li>
+                <div class="zkx-avatar zkx-avatar4"></div>
+                <div class="info">发霉</div>
+                <p class="gray-info">
+                    原有墙体、水槽面盆、<br>
+                    座便密封胶发霉
+                </p>
+            </li>
+            <li>
+                <div class="zkx-avatar zkx-avatar5"></div>
+                <div class="info">裂</div>
+                <p class="gray-info">
+                    原填缝剂、 瓷砖局部空<br>
+                    鼓、裂缝脱落
+                </p>
+            </li>
+            <li class="mr0">
+                <div class="zkx-avatar zkx-avatar6"></div>
+                <div class="info">堵塞</div>
+                <p class="gray-info">
+                    电路断路 、电路短路、开关<br>
+                    失灵 、插座不通电 、电线老<br>
+                    化 、光源损坏等老化旧
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

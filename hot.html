@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>智慧班级 - 首页</title>
+    <meta name="keywords" content="智慧班级、成长档案、成长手册、班级主页、班级相册、学校网站、家校互动、微信班级"/>
+    <meta name="description" content="智慧班级是为中小学校量身定做的系统，涉及到中小学，学校全方面的管理，界面清新美观，操作方便。智慧班级帮助校长更好管理学校，帮助老师更好的进行教学，帮助家长了解孩子在学校的日常学习及生活。"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
+            var bodyH = document.body.clientHeight , screenH = window.screen.availHeight;
+            //根据路径后缀，激活主菜单的active选中的选项
+            if(!!pathname){
+                $.each(list,function(index,val){
+                    $(this).hasClass(pathname)&&$(this).addClass("active");
+                });
+                bodyH<screenH && $('.foot .caret,.foot .top').hide();
+            }
+        });
+    </script>
+
+</head>
+<body >
+
+<div class="top-bar">
+    <div class="wrap cl">
+        <div class="fl">
+            <i class="icon-where"></i>
+            <span>北京</span>
+        </div>
+        <div class="fr">
+            <span class="top-name">客服电话：</span>
+            <span class="top-tel">400-662-9528</span>
+        </div>
+    </div>
+</div>
+<div class="head">
+    <div class="wrap">
+        <div class="logo">
+            <a ></a>
+        </div>
+        <ul class="menu">
+            <li class="server"><a href="/support/server">关于我们</a></li>
+            <li class="aboutus"><a href="/support/aboutus">施工案例</a></li>
+            <li class="weixin"><a href="/support/weixin">入驻平台</a></li>
+            <li class="growbook"><a href="/support/growbook">换新改造</a></li>
+            <li class="product"><a href="/support/product">维修安装</a></li>
+            <li class="login"><a href="/auth/login">首页</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="body main-bottom">
+
+    <div class="recommend-title">
+        <h1>热门推荐</h1>
+        <h5>装修新套餐优惠来袭</h5>
+    </div>
+
+    <div class="recommend-box1">
+        <div class="wrap cl">
+            <div class="recommend-item1 fl">
+                <div class="img-box" style="background-image: url(assets/img/recommond_item1_bg.jpg)"></div>
+                <div class="ml30">
+                    <h4>
+                        阳台翻新 装修3㎡阳台改造 8项全包
+                        真材实料 科学施工 1年质保
+                    </h4>
+                    <div class="recommend-money-box">
+                        <span class="jia">折后价 : </span>
+                        <span class="qian">7200.00 </span>
+                        <span class="yuan">元</span>
+                    </div>
+                    <div class="recommend-dec-box">
+                        <div class="gray"></div>
+                        <div class="red">热销</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" fr">
+                <div class="recommend-item2 fl">
+                    <div class="img-box" style="background-image: url(assets/img/recommond_item2_bg.jpg)"></div>
+                    卫生间翻新 装修4㎡卫生间改造 8项全包 真材实料
+                    <div class="recommend-money-box">
+                        <span class="jia">折后价 : </span>
+                        <span class="qian">17900.00 </span>
+                        <span class="yuan">元</span>
+                    </div>
+                    厨房改造 装修5㎡厨房改造 8项全包 真材实料
+                    <div class="recommend-money-box">
+                        <span class="jia">折后价 : </span>
+                        <span class="qian">25900.00 </span>
+                        <span class="yuan">元</span>
+                    </div>
+                    瓷砖翻新  真材实料
+                    <div class="recommend-money-box">
+                        <span class="jia">折后价 : </span>
+                        <span class="qian">199.00 </span>
+                        <span class="yuan">元/平米</span>
+                    </div>
+
+                </div>
+                <div class="cl">
+                    <div class="recommend-item3 fl">
+                        <div class="img-box" style="background-image: url(assets/img/recommond_item3_bg.jpg)"></div>
+                    </div>
+                    <div class="recommend-item4 fl">
+                        <div class="img-box" style="background-image: url(assets/img/recommond_item4_bg.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommend-title">
+        <h1>真实案例</h1>
+        <h5>让品味融入生活 装修可以更简单</h5>
+    </div>
+
+    <div>
+        MORE
+    </div>
+    <div class="index-box2 wow fadeIn"></div>
+    <div class="index-box3 wow fadeIn">
+        <div class="index-box3-title"></div>
+        <ul class="index-box3-detail">
+            <li class="detail-left detail1 wow fadeInLeft cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>全屋保护</h1>
+                    <p class="tr">专业遮蔽材料保护，防止施工过程<br>
+                        中的污染
+                    </p>
+                </div>
+            </li>
+            <li class="detail-right detail2 wow fadeInRight cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>快速施工</h1>
+                    <p class="tf">
+                        按质按量快速完成维修，提升用户<br>生活品质
+                    </p>
+                </div>
+            </li>
+            <li class="detail-left detail3 wow fadeInLeft cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>管家服务</h1>
+                    <p class="tr">
+                        按质按量快速完成维修，<br>提升用户生活品质
+                    </p>
+                </div>
+            </li>
+            <li class="detail-right detail4 wow fadeInRight cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>社区店面</h1>
+                    <p class="tf">
+                        将建立上万家实体社区五金店面，<br>保证便捷快速的商品供应
+                    </p>
+                </div>
+            </li>
+            <li class="detail-left detail5 wow fadeInLeft cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>全解决方案（包商品包施工）</h1>
+                    <p class="tr">
+                        360度管家服务，保护、维修、清<br>
+                        洁、 售后一条龙服务
+                    </p>
+                </div>
+            </li>
+            <li class="detail-right detail6 wow fadeInRight cl">
+                <div class="line"></div>
+                <div class="pic"></div>
+                <div class="intro">
+                    <h1>认证技师</h1>
+                    <p class="tf">
+                        工程师经过严格的理论、实践、服务<br>
+                        的三重认证
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="index-box4 wow fadeIn">
+        <div class="index-box4-title"></div>
+        <ul class="index-box4-detail">
+            <li class="detail1 wow fadeInLeft"  data-wow-delay=".2s" data-wow-duration="0.3s" ></li>
+            <li class="detail2 wow fadeInRight"  data-wow-delay=".5s" data-wow-duration="0.3s" ></li>
+            <li class="detail3 wow fadeInLeft"  data-wow-delay=".8s" data-wow-duration="0.3s" ></li>
+        </ul>
+    </div>
+
+    <div class="index-box5 wow fadeIn">
+        <div class="index-box5-title"></div>
+        <div class="index-box5-wrapper">
+        <ul class="index-box5-slider">
+            <li style="background-image:url(assets/img/index_box5_slider1.jpg)"></li>
+            <li style="background-image:url(assets/img/index_box5_slider1.jpg)"></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="index-box6 wow fadeIn">
+        <div class="audio-wrap">
+            <div class="audio-box">
+                <iframe height=433 width=648 src="http://player.youku.com/embed/XMTU4MzIyMjQ3Ng==" frameborder=0 allowfullscreen></iframe>
+            </div>
+
+            <div class="shop-intro wow fadeInRight" data-wow-delay=".8s" data-wow-duration="0.3s">
+                <h3>宅快修</h3>
+                <p>
+                    汉迪曼家帮手专业一体化服务的连锁超市，专注室内快修。您有家居房屋各类问题一个电话全部搞定，为广大业主排忧解难。我们拥有各工种优秀技师，上岗前接受专业培训，持证上岗，高效施工！<br>
+                    在未来的三年中将在北京开一批连锁店，目前已开业的有亚运村安慧里店、崇文门店、万柳店。
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="wrap cl">
+        <div class="box1">
+            <div class="title">友情链接</div>
+            <!--中式设计 合肥家装网 深圳房产网 中国装饰网 建筑 深圳二手房 济南房地产网 深圳装修网 深圳租房网 深圳家具 深圳房产网 泡-->
+            <ul>
+                <li><a href="">中式设计</a></li>
+                <li><a href="">实体商店</a></li>
+            </ul>
+        </div>
+        <div class="box2 cl">
+            <div class="fl">
+                <div class="share-list-box">
+                    <ul class="share-list">
+                        <li><a href="" class="weixin"></a></li>
+                        <li><a href="" class="pengyou"></a></li>
+                        <li><a href="" class="weibo"></a></li>
+                    </ul>
+                </div>
+                客服电话:   400-662-9528
+                <p id="beian">
+                    京icp备15060653号-2 　&copy;北京汉迪曼宅急修科技发展有限公司版权所有
+                </p>
+            </div>
+            <div class="fr">
+                <div id="erweima">
+                    <div class="wx-erweima">
+                        <div></div>
+                        <p>技师端平台</p>
+                    </div>
+                    <div class="wap-erweima">
+                        <div></div>
+                        <p>官方公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    $(function(){
+
+        $('.banner').bxSlider({
+            auto: true,
+            speed:400,
+            autoStart: true
+        });
+
+
+        $('.index-box5-slider').bxSlider({
+            auto: true,
+            speed:400,
+            autoStart: true
+        });
+
+        var flag = true;
+        if(navigator.userAgent.indexOf("MSIE")>0){
+            if(!(navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0 || navigator.userAgent.indexOf("MSIE 8.0")>0)){
+                new WOW().init();
+            }
+        }else{
+            new WOW().init();
+        }
+
+    })
+
+</script>
+</html>

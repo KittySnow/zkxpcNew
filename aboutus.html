@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>智慧班级 - 首页</title>
+    <meta name="keywords" content="智慧班级、成长档案、成长手册、班级主页、班级相册、学校网站、家校互动、微信班级"/>
+    <meta name="description" content="智慧班级是为中小学校量身定做的系统，涉及到中小学，学校全方面的管理，界面清新美观，操作方便。智慧班级帮助校长更好管理学校，帮助老师更好的进行教学，帮助家长了解孩子在学校的日常学习及生活。"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script type="text/javascript" src="http://assets.haoyuyuan.com/vendor/libs/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
+            var bodyH = document.body.clientHeight , screenH = window.screen.availHeight;
+            //根据路径后缀，激活主菜单的active选中的选项
+            if(!!pathname){
+                $.each(list,function(index,val){
+                    $(this).hasClass(pathname)&&$(this).addClass("active");
+                });
+                bodyH<screenH && $('.foot .caret,.foot .top').hide();
+            }
+        });
+    </script>
+
+</head>
+<body >
+<div class="head">
+    <div class="head-wrap">
+        <div class="logo">
+            <a ></a>
+        </div>
+        <ul class="menu">
+            <li class="server"><a href="/support/server"><i  class="icon-font2"></i>下载客户端</a></li>
+            <li class="aboutus"><a href="/support/aboutus">入驻</a></li>
+            <li class="weixin"><a href="/support/weixin">宅改造</a></li>
+            <li class="growbook"><a href="/support/growbook">宅换新</a></li>
+            <li class="product"><a href="/support/product">宅快修 <i class="icon-hot"></i></a></li>
+            <li class="login"><a href="/auth/login">首页</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="body aboutus">
+    <div class="banner"></div>
+
+    <div class="aboutus-box1">
+        <div class="wrap">
+            <h1 class="aboutus-box-title">企业简介</h1>
+            <p class="aboutus-box-info">　　宅快修是北京汉迪曼宅急修科技有限公司的互联网品牌，公司成立于 2013年，由刘皓创业，目前已服务10000多户家庭，复购率90%.</p>
+        </div>
+    </div>
+
+    <div class="aboutus-box2">
+        <div class="wrap">
+            <h1 class="aboutus-box-title">品牌介绍</h1>
+            <p class="aboutus-box-info">　　宅快修-后装修市场的互联网020交易平台，基于先进的移动互联网技术和强大底层IT系统，达到一呼百应、一键维修，真正做到用数据和服务来快速解决用户在家庭中出现的快修、换新、改造的装修需求，为用户节省时间，带来美好的居住环境，让用户享受高品质的居家生活。<br>
+        　　宅快修将利用移动互联网和大数据技术，基于真实楼盘LBS定位系统，整合有专业能力的邻居中的维修手艺人入驻平台成为技师，来共同实现维修服务的最后一小时和最后一公里的闪速解决。宅快修将进行统一的培训、统一的认证、统一服务标准、统一的产品定位、统一的维修标准，搭建个人和平台的信用体系，保证交易的公开、透明、成功率和满意度，打造无边界的家庭维修的互联网共享经济平台。</p>
+        </div>
+    </div>
+
+
+    <div class="aboutus-box3">
+        <div class="wrap">
+            <h1 class="aboutus-box-title">公司管理层</h1>
+            <table width="100%">
+                <tr>
+                    <td width="33.3%">
+                        <div class="admin-avatar">
+                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
+                        </div>
+                        <div class="admin-name">名字</div>
+                        <div class="admin-job">总经理</div>
+                    </td>
+                    <td width="33.4%">
+                        <div class="admin-avatar">
+                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
+                        </div>
+                        <div class="admin-name">名字</div>
+                        <div class="admin-job">总经理</div>
+                    </td>
+                    <td width="33.3%">
+                        <div class="admin-avatar">
+                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
+                        </div>
+                        <div class="admin-name">名字</div>
+                        <div class="admin-job">总经理</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="aboutus-box4">
+        <div class="wrap">
+            <h1 class="aboutus-box-title">企业文化</h1>
+            <p class="aboutus-box-info">
+                <b>品牌：</b>宅快修(fr=fast repair)<br>
+                <b>slogan:</b>一呼百应 一键维修<br>
+                <b>愿景：</b>一呼百应，成为每一个中国家庭身边的24小时家装帮手；一键维修，让每一个中国的家庭居住环境更美好；<br>
+                <b>经营理念：</b>保持对用户持久的激情、时刻保持行业的冷静、敬畏用户的需求和服务、坚定给人美好生活的使命<br>
+                <b>价值观：</b>慎独、创新、开放、学习、快<br>
+                <b>企业色：</b>桔红<br>
+            </p>
+        </div>
+    </div>
+</div>

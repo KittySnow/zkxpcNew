@@ -1,0 +1,294 @@
+/**
+ * fullPage 1.4.5
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+.slides {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.section.table, .slide.table {
+    display: table;
+    width: 100%;
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100% !important;
+}
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.controlArrow.prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.controlArrow.next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.scrollable {
+    overflow: scroll;
+}
+.easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fullPage-nav.right {
+    right: 17px;
+}
+#fullPage-nav.left {
+    left: 17px;
+}
+.fullPage-slidesNav {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fullPage-slidesNav.bottom {
+    bottom: 17px;
+}
+.fullPage-slidesNav.top {
+    top: 17px;
+}
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+    margin: 0;
+    padding: 0;
+}
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #333;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.fullPage-tooltip {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+}
+.fullPage-tooltip.right {
+    right: 20px;
+}
+.fullPage-tooltip.left {
+    left: 20px;
+}
+
+.download{padding-top:0}
+#fullPage-nav li, .fullPage-slidesNav li{width: 30px;height: 30px;margin: 19px;}
+#fullPage-nav span, .fullPage-slidesNav span{width: 30px;height: 30px;border: 0}
+#fullPage-nav li .active span, .fullPage-slidesNav .active span{background: #c7e0ff;transition: 0.5s all}
+#fullPage-nav li span, .fullPage-slidesNav span{background: #fff;transition: 0.5s all}
+
+.page2,.page3,.page4,.page5{padding: 62px 0\9;padding: 0}
+.page2{background: #9462e0\9}
+.page3{background: #6ac75b\9}
+.page4{background: #fff29b\9}
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+    margin: 0;
+    padding: 0;
+}
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #333;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.fullPage-tooltip {
+    position: absolute;
+    color: #000;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","SimHei";
+    top: -2px;
+}
+.fullPage-tooltip.right {
+    right: 20px;
+}
+.fullPage-tooltip.left {
+    left: 20px;
+}
+
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fullPage-nav.right {
+    right: 17px;
+}
+.wrap{width:1200px;margin:0 auto;height: 100%;position:relative;}
+.page-bg{width:100%;height:100%;min-width:1200px;position:relative}
+.page-bg.page1-bg{background: url(../img/download1.jpg) no-repeat 50% 0 #ff8a52;background-size:contain;}
+.page1-button-pos{position:absolute;top: 45%;right:345px;opacity: 0;}
+.but{
+    padding: 0 33px;
+    border:1px solid #fff;
+    margin-bottom:27px;
+    border-radius:10px;
+    line-height: 78px;
+    display:block;
+    cursor: pointer;
+}
+.but span{
+    color: #fff;font-size:20px;margin-left:25px;}
+.icon-android-orange{display:inline-block;width:43px ;height:56px;background:url(../img/icon_robot.png) no-repeat 50% 50% #ff8a52;vertical-align:middle}
+.icon-ios-orange{display:inline-block;width:43px ;height:56px;background:url(../img/icon_apple.png) no-repeat 50% 50% #ff8a52;vertical-align:middle}
+.page-bg.page2-bg{background: url(../img/download2_img.jpg) no-repeat 50% 95%;opacity:0;/* background-size:contain; */}
+.page2-txt{background: url(../img/download2_txt.jpg) no-repeat 50% 50%;opacity:0;background-size:contain;height: 42%;}
+.page-bg.page3-bg{background: url(../img/download3_bg.jpg) no-repeat 50% 0;opacity:0;background-size:contain;}
+.page3-txt{background: url(../img/download3_txt.jpg) no-repeat 80% 0;opacity:0;background-size:contain;position: relative;top: 10%;height:26%;}
+.page-bg.page4-bg{background: url(../img/download4_bg.jpg) no-repeat 50% top;opacity:0;background-size: contain;}
+.page4-txt{background: url(../img/download4_txt.jpg) no-repeat 0 0;opacity:0;background-size:contain;position: relative;top: 30%;height: 21%;}
+.page-bg.page5-bg{background:url(../img/download5_bg.jpg) no-repeat 50% bottom;opacity:0;background-size:contain;}
+.page5-txt{background: url(../img/download5_phone.jpg) no-repeat 46.5% 0;opacity:0;background-size:contain;position: relative;top: 40%;height: 60%;}
+.page-bg.page6-bg{background: url(../img/download6_bg.jpg) no-repeat 50% 0;opacity:0;background-size:contain;}
+.page6-txt{background: url(../img/download6_txt.jpg) no-repeat 0 0;opacity:0;background-size:contain;position: relative;top: 30%;height: 21%;}
+.page7-txt{position:relative;top:12%;background: url(../img/download7_txt.jpg) no-repeat 50% 0;opacity:0;background-size:contain;height: 17.5%;}
+
+.page7-button-pos{position:absolute;top: 40%;left: 284px;opacity: 0;height:40%;right: 579px;}
+.page7-img-pos{position:absolute;top:40%;right: 255px;opacity: 0;height:40%;left: 710px;background: url(../img/erweima.jpg) no-repeat 50% 0;opacity:0;background-size:contain;}
+.but-ios-gray{background: url(../img/ios_download.png) no-repeat 50% 0;background-size:contain;display: block;width: 100%;height: 42%;cursor:pointer;}
+.h8{height: 16%;}
+.but-android-gray{background: url(../img/android_download.png) no-repeat 50% 0;background-size:contain;display: block;width: 100%;height: 42%;cursor:pointer;}
+
+.footer{width: 100%;min-width: 1200px;background: #000;padding-top:45px;height:31%;min-height: 220px;padding-bottom:20px;max-height:340px;}
+.footer .wrap{width:1200px;margin:0 auto;}
+.footer .foot-fl{float:left;width:75%}
+.footer .foot-fl .box1{float:left;width:187px;height:141px;margin-right:200px;}
+.footer .foot-fl .box1 .title{font-size:22px;color:#c2c2c2;line-height:40px;border-bottom:1px solid #c2c2c2}
+.footer .foot-fl .box1 ul{margin-top:10px;}
+.footer .foot-fl .box1 ul li{font-size:18px;line-height:45px;color:#c2c2c2}
+.footer .foot-fl .box1 ul li a{line-height:45px;}
+.footer .foot-fr{float:right;width:25%}
+.footer a{color:#c2c2c2;font-size:18px;}
+.footer a:hover{color:#fc6621}
+.footer #beian{color:#c2c2c2;font-size:18px;margin-top:20px;}
+.footer #erweima{margin:14px;}
+.wx-erweima{display:table-cell;width:54%}
+.wap-erweima{display:table-cell;width:54%}
+.footer #erweima .wx-erweima div,.footer #erweima .wap-erweima div{width:120px;height:120px;}
+.footer #erweima .wx-erweima div{background-image:url(../img/wx1.jpg)}
+.footer #erweima .wap-erweima div{background-image:url(../img/wap1.jpg)}
+.footer #erweima p{color:#c2c2c2;font-size:17px;line-height:45px;}

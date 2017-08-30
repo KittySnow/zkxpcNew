@@ -39,6 +39,7 @@ a{text-decoration: none}
 .recommend-title{padding-top:80px;padding-bottom:42px;height:65px;}
 .recommend-title h1{text-align: center;font-size:26px;color:#4a4a4a;margin-bottom: 20px;}
 .recommend-title h5{text-align: center;font-size:16px;color:#ccc;}
+.recommend-title {}
 .recommend-box1{background:#f5f5f5;padding-bottom:48px;padding-top:48px;}
 .recommend-item1{width:329px;height: 726px;padding-bottom: 10px;float: left;background:#fff;margin-right:10px;}
 .recommend-item1 .img-box{height:301px;height:475px;background:url(../img/icon_phone.png) no-repeat 50% 50%;background-size: cover}
@@ -86,9 +87,8 @@ a{text-decoration: none}
 .recommend-item3 .img-box{height:301px;background-repeat:no-repeat;background-position: 50% 50%;background-size: cover}
 .recommend-item4 .img-box{height:301px;background-repeat:no-repeat;background-position: 50% 50%;background-size: cover}
 
-{
-
-}
+.tag-box{width:352px;margin: 0 auto;}
+.tag-span{display: inline-block;width:93px;height:40px;line-height:40px;text-align: center;border: 1px solid #fd9271;color:#fd9271}
 
 .icon-font2{background:url(../img/icon_phone.png) no-repeat 0 0;width:16px;height:40px;display:inline-block;vertical-align: -18px;margin-right: 5px;}
 .footer{width: 100%;min-width: 1200px;background: #000;padding-top:60px;padding-bottom:100px;}
@@ -291,3 +291,33 @@ a{text-decoration: none}
 .rz-box{height:210px;border:1px solid #d4d4d5;border-radius:8px;width:1198px;background: #fff;}
 .rz-info{font-size: 18px;color:#898989;line-height:86px;padding-left: 20px;}
 .rz-tips{font-size: 16px;color:#898989;line-height:86px}
+
+
+.zk-pagination-right{position:relative;min-height:20px;}
+.zk-pagination{margin-top: 50px; margin-bottom: 50px; text-align: center;position:relative}
+.zk-pagination-right .zk-pagination{margin-top: 20px;margin-bottom:30px;text-align:right;position:relative;}
+.zk-pagination > div{display: inline-block; margin-left: 1px; font-size: 12px; cursor: pointer;}
+.zk-pagination form{display: none;}
+.zk-pagination > div.disabled a{cursor: not-allowed;}
+.zk-pagination > div.disabled a:hover{background: none; color: #333;}
+.zk-pagination > div.btn-opera{margin-left: 0;}
+.zk-pagination > div.btn-opera a{border: 1px solid #c4c4c4; background: #fff; color: #333;}
+.zk-pagination > div > a,
+.zk-pagination > div > span{float: none; margin-left: 0; border: 0; display: block; color: #333; font-weight: 400; border-radius: 2px; background: none; padding: 4px 10px; margin-right: 10px; font-size: 15px;}
+.zk-pagination > div:first-child > a,
+.zk-pagination > div:first-child > span,
+.zk-pagination-lg > div:first-child > a,
+.zk-pagination-lg > div:first-child > span,
+.zk-pagination-sm > div:first-child > a,
+.zk-pagination-sm > div:first-child > span,
+.zk-pagination > div:last-child > a,
+.zk-pagination > div:last-child > span,
+.zk-pagination-lg > div:last-child > a,
+.zk-pagination-lg > div:last-child > span,
+.zk-pagination-sm > div:last-child > a,
+.zk-pagination-sm > div:last-child > span{border-radius: 2px;}
+.zk-pagination > .active > a,
+.zk-pagination > .active > span,
+.zk-pagination > .active > a:hover,
+.zk-pagination > .active > span:hover{background-color:#fd9271; cursor: default; color: #fff;}
+.zk-pagination .active.btn-opera{display: none;}

@@ -13,6 +13,7 @@ a{text-decoration: none}
 .ml30{margin-left:30px;}
 .wrap{position: relative;float: none;width:1200px;margin: 0 auto}
 .wrap1120{position: relative;float: none;width:1120px;margin: 0 auto}
+.pt25{padding-top:25px;}
 .nav{display: none;position: fixed;z-index: 6;top: 0;width: 100%;height: 30px;line-height: 30px;background-color: #E6E7E8;font-family: SimSun;font-size: 12px}
 .body{clear: both;position: relative;padding-top: 128px;}
 .top-bar{position: fixed;top:0;background:#f0f0f0;height:40px;width:100%;z-index: 1000;}
@@ -110,10 +111,50 @@ a{text-decoration: none}
 .recommend-item4{width:310px;}
 .recommend-item4 .img-box{height:233px;width:310px;background-repeat:no-repeat;background-position: 50% 50%;background-size: cover;margin-bottom: 20px;}
 
-.tag-box{width:352px;margin: 0 auto;}
-.tag-span{display: inline-block;width:93px;height:40px;line-height:40px;text-align: center;border: 1px solid #fd9271;color:#fd9271}
-.more-box{width: 260px;height:50px;border: 1px solid #dddfde;margin:0 auto;color: #6e6e6e;
-    line-height:50px;text-align: center;}
+.tag-box{width:352px;font-size: 0;margin: 30px auto 0;}
+.tag-span{display: inline-block;width:93px;height:40px;line-height:40px;text-align: center;border: 1px solid #fd9271;color:#fd9271;margin-left:10px;margin-right:10px;font-size: 14px;}
+.more-box{width: 260px;height:50px;border: 1px solid #dddfde;margin:0 auto;color: #6e6e6e;line-height:50px;text-align: center;}
+.index-banner-box{
+    height: 730px;
+    width:100%;
+    background:url(../img/index1_bg.jpg) no-repeat #ebecf0 0 0;
+}
+.index-banner-box h3{
+    color:#fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.banner-tips-box{
+    padding: 25px 20px;
+    width:310px;
+    height: 450px;
+    background:rgba(0,0,0,0.4);
+}
+.banner-numbox{
+    font-size: 0;
+    margin: 25px auto;
+}
+.banner-numbox li{
+    display: inline-block;
+    font-size: 30px;
+    width: 49px;
+    height: 74px;
+    color:#fd9271;
+    line-height:74px;
+    text-align: center;
+    background: #fff;
+    border-radius:5px;
+    margin-right:2px;
+}
+.inbox-form{margin-top:20px;margin-bottom:20px;border-top:1px solid #99999a;padding-top:34px;}
+.city-select{margin-left:16px;font-family: microsoft yahei;width:275px;height: 45px;font-size: 16px;line-height: 45px;vertical-align:0px;text-align: right;border: 0;border-radius:1px;color:#333;padding:0px 35px 0px 10px;padding:5px 4px 5px 10px \0;padding:5px 10px 5px 10px \9;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../img/index_icon_down.png) 95% 50% no-repeat #fff;background-image:none \0;background-image:none \9;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-transition:border-color ease-in-out .15s;-o-transition:border-color ease-in-out .15s;transition:border-color ease-in-out .15s;border-radius:4px;}
+.type-select{margin-left:16px;margin-top:15px;font-family: microsoft yahei;width:275px;height: 45px;font-size: 16px;line-height: 45px;vertical-align:0px;text-align: right;border: 0;border-radius:1px;color:#333;padding:0px 35px 0px 10px;padding:5px 4px 5px 10px \0;padding:5px 10px 5px 10px \9;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url(../img/index_icon_down.png) 95% 50% no-repeat #fff;background-image:none \0;background-image:none \9;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-transition:border-color ease-in-out .15s;-o-transition:border-color ease-in-out .15s;transition:border-color ease-in-out .15s;border-radius:4px;}
+.tel-input{margin-left:16px;margin-top:15px;margin-bottom:32px;font-family: microsoft yahei;outline:0;width:275px;height:43px;font-size: 16px;line-height: 43px;vertical-align:0px;border-radius:4px;border: 0;text-indent: 11px;}
+.index-submit{margin-left:16px;margin-top:15px;font-family: microsoft yahei;
+width:275px;outline:0;height:43px;font-size: 14px;line-height: 43px;vertical-align:0px;border-radius:4px;border: 0;
+    color: #fff;background:#fd9271;text-align: center;
+}
+
 
 .icon-font2{background:url(../img/icon_phone.png) no-repeat 0 0;width:16px;height:40px;display:inline-block;vertical-align: -18px;margin-right: 5px;}
 .footer{width: 100%;min-width: 1200px;background: #000;padding-top:60px;padding-bottom:100px;}

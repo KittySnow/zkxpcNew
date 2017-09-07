@@ -9,8 +9,12 @@
     <meta name="keywords" content="智慧班级、成长档案、成长手册、班级主页、班级相册、学校网站、家校互动、微信班级"/>
     <meta name="description" content="智慧班级是为中小学校量身定做的系统，涉及到中小学，学校全方面的管理，界面清新美观，操作方便。智慧班级帮助校长更好管理学校，帮助老师更好的进行教学，帮助家长了解孩子在学校的日常学习及生活。"/>
     <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
-    <script type="text/javascript" src="http://assets.haoyuyuan.com/vendor/libs/jquery/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
@@ -27,84 +31,164 @@
 
 </head>
 <body >
+
+<div class="top-bar">
+    <div class="wrap cl">
+        <div class="fl">
+            <i class="icon-where"></i>
+            <span>北京</span>
+        </div>
+        <div class="fr">
+            <span class="top-name">客服电话：</span>
+            <span class="top-tel">400-662-9528</span>
+        </div>
+    </div>
+</div>
 <div class="head">
-    <div class="head-wrap">
+    <div class="wrap">
         <div class="logo">
             <a ></a>
         </div>
         <ul class="menu">
-            <li class="server"><a href="/support/server"><i  class="icon-font2"></i>下载客户端</a></li>
-            <li class="aboutus"><a href="/support/aboutus">入驻</a></li>
-            <li class="weixin"><a href="/support/weixin">宅改造</a></li>
-            <li class="growbook"><a href="/support/growbook">宅换新</a></li>
-            <li class="product"><a href="/support/product">宅快修 <i class="icon-hot"></i></a></li>
+            <li class="server"><a href="/support/server">关于我们</a></li>
+            <li class="aboutus"><a href="/support/aboutus">施工案例</a></li>
+            <li class="weixin"><a href="/support/weixin">入驻平台</a></li>
+            <li class="growbook"><a href="/support/growbook">换新改造</a></li>
+            <li class="product"><a href="/support/product">维修安装</a></li>
             <li class="login"><a href="/auth/login">首页</a></li>
         </ul>
     </div>
 </div>
 
-<div class="body aboutus">
-    <div class="banner"></div>
-
-    <div class="aboutus-box1">
-        <div class="wrap">
-            <h1 class="aboutus-box-title">企业简介</h1>
-            <p class="aboutus-box-info">　　宅快修是北京汉迪曼宅急修科技有限公司的互联网品牌，公司成立于 2013年，由刘皓创业，目前已服务10000多户家庭，复购率90%.</p>
-        </div>
+<div class="body main-bottom">
+    <div class="aboutus-bg1 wow bounceInLeft"></div>
+    <div class="aboutus-bg wow bounceRight">
+        <h2>我们最引以自豪是  一直以来的“专注”</h2>
+        <ul>
+            <li class="wow fadeIn" data-wow-delay="0.3s">
+                <div>
+                    <img src="assets/img/aboutus_icon1.jpg" alt=""/>
+                </div>
+                <h4>专注品牌</h4>
+                <p>
+                    我们着重打造品牌效应 <br/>
+                    着重品牌服务、质量、制度等 <br/>
+                    是每位员工的信念    <br/>
+                </p>
+            </li>
+            <li class="wow fadeIn" data-wow-delay="0.6s">
+                <div>
+                    <img src="assets/img/aboutus_icon2.jpg" alt=""/>
+                </div>
+                <h4>专注品牌</h4>
+                <p>
+                    充分发挥自身特点和优势<br/>
+                    在这个基础上<br/>
+                    不断的创新来给每位用户更好的体验<br/>
+                </p>
+            </li>
+            <li class="mr0 wow fadeIn" data-wow-delay="0.9s">
+                <div>
+                    <img src="assets/img/aboutus_icon3.jpg" alt=""/>
+                </div>
+                <h4>专注发展</h4>
+                <p>
+                    创业的道路上充满了欢乐与泪水  <br/>
+                    集团的今天是大家努力的结果  <br/>
+                    反思过去创新未来  <br/>
+                </p>
+            </li>
+        </ul>
     </div>
-
-    <div class="aboutus-box2">
+    <div class="aboutus-bg2 wow bounceInLeft"></div>
+    <div class="aboutus-bg3 wow bounceInRight"></div>
+    <div class="aboutus-bg4 wow bounceInLeft">
         <div class="wrap">
-            <h1 class="aboutus-box-title">品牌介绍</h1>
-            <p class="aboutus-box-info">　　宅快修-后装修市场的互联网020交易平台，基于先进的移动互联网技术和强大底层IT系统，达到一呼百应、一键维修，真正做到用数据和服务来快速解决用户在家庭中出现的快修、换新、改造的装修需求，为用户节省时间，带来美好的居住环境，让用户享受高品质的居家生活。<br>
-        　　宅快修将利用移动互联网和大数据技术，基于真实楼盘LBS定位系统，整合有专业能力的邻居中的维修手艺人入驻平台成为技师，来共同实现维修服务的最后一小时和最后一公里的闪速解决。宅快修将进行统一的培训、统一的认证、统一服务标准、统一的产品定位、统一的维修标准，搭建个人和平台的信用体系，保证交易的公开、透明、成功率和满意度，打造无边界的家庭维修的互联网共享经济平台。</p>
-        </div>
-    </div>
-
-
-    <div class="aboutus-box3">
-        <div class="wrap">
-            <h1 class="aboutus-box-title">公司管理层</h1>
-            <table width="100%">
-                <tr>
-                    <td width="33.3%">
-                        <div class="admin-avatar">
-                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
-                        </div>
-                        <div class="admin-name">名字</div>
-                        <div class="admin-job">总经理</div>
-                    </td>
-                    <td width="33.4%">
-                        <div class="admin-avatar">
-                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
-                        </div>
-                        <div class="admin-name">名字</div>
-                        <div class="admin-job">总经理</div>
-                    </td>
-                    <td width="33.3%">
-                        <div class="admin-avatar">
-                            <div style="background-image: url(assets/img/zhx_01.png)" class="admin-avatar-box"></div>
-                        </div>
-                        <div class="admin-name">名字</div>
-                        <div class="admin-job">总经理</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-
-    <div class="aboutus-box4">
-        <div class="wrap">
-            <h1 class="aboutus-box-title">企业文化</h1>
-            <p class="aboutus-box-info">
-                <b>品牌：</b>宅快修(fr=fast repair)<br>
-                <b>slogan:</b>一呼百应 一键维修<br>
-                <b>愿景：</b>一呼百应，成为每一个中国家庭身边的24小时家装帮手；一键维修，让每一个中国的家庭居住环境更美好；<br>
-                <b>经营理念：</b>保持对用户持久的激情、时刻保持行业的冷静、敬畏用户的需求和服务、坚定给人美好生活的使命<br>
-                <b>价值观：</b>慎独、创新、开放、学习、快<br>
-                <b>企业色：</b>桔红<br>
-            </p>
+            <a class="aboutus-btn"></a>
         </div>
     </div>
 </div>
+
+<div class="footer">
+    <div class="wrap cl">
+        <div class="box1">
+            <div class="title">友情链接</div>
+            <ul class="cl link-box">
+                <li><a href="">中式设计</a></li>
+                <li><a href="">合肥家装网</a></li>
+                <li><a href="">深圳房产网</a></li>
+                <li><a href="">中国装饰网</a></li>
+                <li><a href="">建筑</a></li>
+                <li><a href="">深圳二手房</a></li>
+                <li><a href="">济南房地产网</a></li>
+                <li><a href="">深圳装修网</a></li>
+                <li><a href="">深圳租房网</a></li>
+                <li><a href="">深圳家具</a></li>
+                <li><a href="">深圳房产网</a></li>
+                <li><a href="">泡泡屋</a></li>
+                <li><a href="">娄底房产网</a></li>
+                <li><a href="">深圳婚纱摄影</a></li>
+                <li><a href="">装修图网</a></li>
+                <li><a href="">厦门房产</a></li>
+                <li><a href="">顺德二手房</a></li>
+                <li><a href="">装修网</a></li>
+                <li><a href="">仙桃房网</a></li>
+                <li><a href="">建材在线</a></li>
+                <li><a href="">别墅设计图</a></li>
+                <li><a href="">长沙装修网</a></li>
+                <li><a href="">深圳买房</a></li>
+                <li><a href="">深圳分类信息</a></li>
+                <li><a href="">深圳装修公司</a></li>
+            </ul>
+        </div>
+        <div class="box2 cl">
+            <div class="fl">
+                <div class="share-list-box">
+                    <ul class="share-list">
+                        <li><a href="" class="weixin"></a></li>
+                        <li><a href="" class="pengyou"></a></li>
+                        <li><a href="" class="weibo"></a></li>
+                    </ul>
+                </div>
+                <div class="server-box">
+                    客服电话:  <span>400-662-9528</span>
+                </div>
+                <p id="beian">
+                    京icp备15060653号-2 　&copy;北京汉迪曼宅急修科技发展有限公司版权所有
+                </p>
+            </div>
+            <div class="fr">
+                <div id="erweima">
+                    <div class="wx-erweima">
+                        <div></div>
+                        <p>技师端平台</p>
+                    </div>
+                    <div class="wap-erweima">
+                        <div></div>
+                        <p>官方公众号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    $(function(){
+
+        var flag = true;
+        if(navigator.userAgent.indexOf("MSIE")>0){
+            if(!(navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0 || navigator.userAgent.indexOf("MSIE 8.0")>0)){
+                new WOW().init();
+            }
+        }else{
+            new WOW().init();
+        }
+
+    })
+
+</script>
+</html>

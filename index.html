@@ -5,7 +5,10 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>宅快修</title>
+    <title>宅快修-一呼百应 一键维修-后装修市场互联网O2O交易平台</title>
+    <meta name="author" content="宅快修-一呼百应 一键维修-后装修市场的互联网O2O交易平台">
+    <meta name="description" content=" 宅快修基于先进的移动互联网技术和强大底层IT系统，达到一呼百应、一键维修，真正做到用数据和服务来快速解决用户在家庭中出现的快修、换新、改造的装修需求，为用户节省时间，带来美好的居住环境，让用户享受高品质的居家生活。宅快修将利用移动互联网和大数据技术，基于真实楼盘LBS定位系统，整合有专业能力的邻居中的维修手艺人入驻平台成为技师，来共同实现维修服务的最后一小时和最后一公里的闪速解决。宅快修将重新定义工长、工人、社区五金店，将进行统一的培训、统一的认证、统一服务标准、统一的产品定位、统一的维修标准，搭建个人和平台的信用体系，保证交易的公开、透明、成功率和满意度，打造无边界的家庭维修的互联网共享经济平台。"/>
+    <meta name="keywords" content="家庭维修,后装修,维修,马桶，下水疏通，漏水，卫生间返味，更换下水管，更换角阀，刷墙，防水，厨房卫生间改造">
     <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
     <link rel="stylesheet" href="assets/font/iconfont.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
@@ -13,19 +16,10 @@
     <link rel="stylesheet" href="assets/css/animate.css"/>
     <script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/num.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            var pathname = location.pathname.split('/')[2]|| "home",list=$('.menu li');
-            var bodyH = document.body.clientHeight , screenH = window.screen.availHeight;
-            //根据路径后缀，激活主菜单的active选中的选项
-            if(!!pathname){
-                $.each(list,function(index,val){
-                    $(this).hasClass(pathname)&&$(this).addClass("active");
-                });
-                bodyH<screenH && $('.foot .caret,.foot .top').hide();
-            }
         });
-
     </script>
 
 </head>
@@ -36,7 +30,9 @@
         <div class="fl">
             <i class="icon-where"></i>
             <span>北京</span>
+            <div>3211</div>
         </div>
+
         <div class="fr">
             <span class="top-name">客服电话：</span>
             <span class="top-tel">400-662-9528</span>
@@ -65,7 +61,7 @@
         <div class="wrap pt25">
             <div class="banner-tips-box">
                 <h3>我们为</h3>
-                <ul class="banner-numbox">
+                <ul class="banner-numbox"  id="num">
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -89,7 +85,7 @@
     </div>
 
 
-    <div class="recommend-title">
+    <div class="recommend-title wow fadeIn">
         <h1>快修服务</h1>
         <h5>品质服务 售后无忧 多重保障</h5>
         <div class="tag-box">
@@ -106,7 +102,7 @@
     <div class="more-box mb80">MORE</div>
 
 
-    <div class="index-box2">
+    <div class="index-box2 wow fadeIn">
         <div class="recommend-title">
             <h1>局改服务</h1>
             <h5>严禁工序 施工规范 品质无忧</h5>
@@ -142,13 +138,13 @@
         </div>
     </div>
     
-    <div class="index-box3">
+    <div class="index-box3 wow fadeIn">
         <div class="wrap">
             <img src="assets/img/index_box3_bg.jpg" alt=""/>
         </div>
     </div>
 
-    <div class="index-box4">
+    <div class="index-box4 wow fadeIn">
         <div class="wrap">
             <div class="info-box">
                 <h2>装修百科先知道</h2>
@@ -165,7 +161,7 @@
         </div>
     </div>
 
-    <div class="index-box5">
+    <div class="index-box5  wow fadeInLeft">
         <div class="recommend-title">
             <h1>装修案例</h1>
             <h5>带您发现家装新灵感</h5>
@@ -204,7 +200,7 @@
         </div>
     </div>
 
-    <div class="index-box6">
+    <div class="index-box6  wow fadeInRight">
         <div class="recommend-title">
             <h1>企业动态</h1>
         </div>
@@ -242,7 +238,7 @@
         </div>
     </div>
 
-    <div class="index-box7">
+    <div class="index-box7  wow fadeIn">
         <div class="wrap">
             <ul>
                 <li>
@@ -273,7 +269,7 @@
     <ul>
         <li><i class="iconfont chat">&#xe62e;</i></li>
         <li><i class="iconfont phone">&#xe61c;</i></li>
-        <li><i class="iconfont">&#xe6a5;</i></li>
+        <li  style="display:none"><i class="iconfont" onclick="javascript:scroll(0,0)" >&#xe6a5;</i></li>
     </ul>
 </div>
 
@@ -346,14 +342,23 @@
 </body>
 
 <script>
+    var demo;
     $(function(){
 
 
-        $('.index-box5-slider').bxSlider({
-            auto: true,
-            speed:400,
-            autoStart: true
-        });
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: '',
+            decimal: ''
+        };
+
+        demo = new CountUp('num', 189535, 320489, 0, 1, options);
+
+        setTimeout(function(){
+            demo.start();
+        },500)
+
 
         var flag = true;
         if(navigator.userAgent.indexOf("MSIE")>0){
@@ -363,6 +368,19 @@
         }else{
             new WOW().init();
         }
+
+
+        $(window).scroll(function(){
+            var clientHeight = $(window).height(),
+                    scrollTop = $(window).scrollTop(),
+                    scrollHeight = $(document).height();
+            //数值高度为product_x的背景div高
+            if(scrollTop>0){
+                $('.web-help li').eq(2).slideDown(500);
+            }else{
+                $('.web-help li').eq(2).slideUp(500);
+            }
+        });
 
     })
 
